@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box:nth-child(4) .mini{
+    background-color: darkkhaki;
+    color: aliceblue;
+}
+
+.box:nth-child(2) .mini{
+    background-color: crimson;
+    color: aliceblue;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .box {
+        background-color: grey;
+        border: 3px solid black;
+        width: 32%;
+        float: left;
+        margin: 5px;
+        padding: 10px;
+    }
+    .mini {
+        position: relative;
+        bottom: 11px;
+        left: 73%;
+        background-color: rgb(144, 46, 46);
+        border: 2px solid black;
+        width: 30%;
+        font-size: 1.25em;
+        text-align: center;
+    }
+    /* .box:nth-child(4) .mini{
+        background-color: darkkhaki;
+        color: aliceblue;
+    } */
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) and (max-width:991px) {
+    .box {
+        background-color: grey;
+        border: 3px solid black;
+        width: 48%;
+        float: left;
+        margin: 5px;
+        padding: 10px;
+    }
+    .mini {
+        position: relative;
+        bottom: 11px;
+        left: 73%;
+        background-color: rgb(144, 46, 46);
+        border: 2px solid black;
+        width: 30%;
+        font-size: 1.25em;
+        text-align: center;
+    }
+    .box:nth-child(4){
+        width: 97% !important;
+    }
+    .box:nth-child(4) .mini{
+        position: relative;
+        /* background-color: darkkhaki; */
+        /* color: aliceblue; */
+        bottom: 11px;
+        left: 71.5%;
+    }
+}
+
+/* MOBILE VERSION */
+@media (max-width:767px) {
+    .box {
+        background-color: grey;
+        border: 3px solid black;
+        width: 82%;
+        float: left;
+        margin: 10px 50px 10px 50px;
+        padding: 15px;
+    }
+    .mini {
+        position: relative;
+        bottom: 17px;
+        left: 73.5%;
+        background-color: rgb(144, 46, 46);
+        border: 2px solid black;
+        width: 30%;
+        font-size: 1.25em;
+        text-align: center;
+    }
+    /* .box:nth-child(4) .mini{
+        background-color: darkkhaki;
+        color: aliceblue;
+    } */
+}
